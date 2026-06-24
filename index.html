@@ -1,93 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Jaiswal Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raj Jaiswal | Portfolio</title>
 
-        header {
-            background: #4285F4;
-            color: white;
-            text-align: center;
-            padding: 40px;
-        }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
 
-        section {
-            padding: 20px;
-            margin: 20px;
-            background: white;
-            border-radius: 10px;
-        }
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
 
-        h2 {
-            color: #4285F4;
-        }
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+}
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #222;
-            color: white;
-        }
-    </style>
+.profile{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #38bdf8;
+box-shadow:0 0 25px #38bdf8;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:1.2rem;
+color:#cbd5e1;
+}
+
+.buttons{
+margin-top:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:8px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+background:#0284c7;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:2.3rem;
+text-align:center;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.about{
+text-align:center;
+font-size:1.1rem;
+max-width:900px;
+margin:auto;
+color:#cbd5e1;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 15px rgba(56,189,248,.5);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+background:#020617;
+padding:20px;
+text-align:center;
+color:#94a3b8;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.2rem;
+}
+.profile{
+width:170px;
+height:170px;
+}
+}
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Raj Jaiswal</h1>
-        <img src="profile.jpg" alt="Raj Jaiswal" width="200">
-        <p>B.Tech CSE Student | Google Student Ambassador | Content Creator</p>
-    </header>
+<section class="hero">
+<img src="profile.jpg" class="profile" alt="Raj Jaiswal">
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am a B.Tech CSE student at Galgotias College of Engineering and Technology.
-            Passionate about coding, AI, content creation, and technology communities.
-        </p>
-    </section>
+<h1>Raj Jaiswal</h1>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>C Programming</li>
-            <li>HTML & CSS</li>
-            <li>Video Editing</li>
-            <li>Git & GitHub</li>
-            <li>AI Tools (Gemini, ChatGPT)</li>
-        </ul>
-    </section>
+<p>B.Tech CSE Student | Google Student Ambassador | Content Creator</p>
 
-    <section>
-        <h2>Projects & Achievements</h2>
-        <ul>
-            <li>Google Student Ambassador 2026</li>
-            <li>Participated in IIT Delhi Hackathon</li>
-            <li>Organized Microsoft Event at College</li>
-            <li>YouTube Creator - Aura Editz</li>
-        </ul>
-    </section>
+<div class="buttons">
+<a href="https://github.com/rajjaiswal43" target="_blank" class="btn">GitHub</a>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: aj379940@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/raj-jaiswal-a522a1383" target="_blank">LinkedIn</a></p>
-        <p>GitHub: <a href="https://github.com/rajjaiswal43" target="_blank">GitHub</a></p> 
-        <p>Resume: <a href="Raj_Jaiswal_Updated_Resume.pdf" target="_blank">Download Resume</a></p> 
-    </section>
+<a href="https://www.linkedin.com/in/raj-jaiswal-a522a1383" target="_blank" class="btn">LinkedIn</a>
 
-    <footer>
-        © 2026 Raj Jaiswal
-    </footer>
+<a href="Raj_Jaiswal_Updated_Resume.pdf" target="_blank" class="btn">Resume</a>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">About Me</h2>
+
+<p class="about">
+I am a B.Tech Computer Science student at Galgotias College of Engineering & Technology. Passionate about Artificial Intelligence, Web Development, Open Source, and Developer Communities. I enjoy building projects, participating in hackathons, and helping students through technical events and community initiatives.
+</p>
+</section>
+
+<section>
+<h2 class="section-title">Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>C Programming</h3>
+<p>Strong foundation in programming fundamentals and problem solving.</p>
+</div>
+
+<div class="card">
+<h3>HTML & CSS</h3>
+<p>Building responsive and attractive websites.</p>
+</div>
+
+<div class="card">
+<h3>Git & GitHub</h3>
+<p>Version control and project management.</p>
+</div>
+
+<div class="card">
+<h3>AI Tools</h3>
+<p>Gemini, ChatGPT and AI productivity tools.</p>
+</div>
+
+<div class="card">
+<h3>Video Editing</h3>
+<p>Content creation and social media editing.</p>
+</div>
+
+<div class="card">
+<h3>Python Basics</h3>
+<p>Exploring automation and AI development.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Achievements</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Google Student Ambassador</h3>
+<p>Selected to promote technology awareness and community initiatives.</p>
+</div>
+
+<div class="card">
+<h3>IIT Delhi Hackathon</h3>
+<p>Participated in AMD AI Reinforcement Hackathon and collaborated on innovative solutions.</p>
+</div>
+
+<div class="card">
+<h3>Microsoft Event Organizer</h3>
+<p>Organized technical events and guided students in participation and setup.</p>
+</div>
+
+<div class="card">
+<h3>Content Creator</h3>
+<p>Managing Aura Editz and creating educational technology content.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Personal portfolio hosted on GitHub Pages.</p>
+</div>
+
+<div class="card">
+<h3>AI Learning Journey</h3>
+<p>Exploring AI tools and practical applications.</p>
+</div>
+
+<div class="card">
+<h3>Upcoming Projects</h3>
+<p>Web apps, automation tools and AI-based solutions.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p>Email: aj379940@gmail.com</p>
+<br>
+
+<a href="https://github.com/rajjaiswal43" target="_blank" class="btn">GitHub</a>
+
+<a href="https://www.linkedin.com/in/raj-jaiswal-a522a1383" target="_blank" class="btn">LinkedIn</a>
+
+<a href="Raj_Jaiswal_Updated_Resume.pdf" target="_blank" class="btn">Download Resume</a>
+
+</div>
+</section>
+
+<footer>
+© 2026 Raj Jaiswal | Built with HTML & CSS
+</footer>
 
 </body>
-
 </html>
